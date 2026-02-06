@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('total_price');
             $table->integer('total_item');
             $table->integer('paymnent_amount');
-            $table->integer('payment_method');
+            $table->string('payment_method');
 
             $table->foreignId('cashierId')->constrained('users');
             $table->string('cashier_name');
